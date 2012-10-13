@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #3A3A3A;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  transition: opacity 800ms ease-in 200ms;
+		-webkit-transition: opacity 800ms ease-in 200ms;
+		-moz-transition: opacity 800ms ease-in 200ms;
+		-ms-transition: opacity 800ms ease-in 200ms;
+		-o-transition: opacity 800ms ease-in 200ms;
+  transition: background 200ms ease;
+	  -webkit-transition: background 200ms ease;
+	  -moz-transition: background 200ms ease;
+	  -ms-transition: background 200ms ease;
+	  -o-transition: background 200ms ease;
+}
+
+h1,h2 {
+  font-weight: 700;
+}
+
+.outline-2,.outline-3 {
+  opacity: 0;
+  
+  width: 900px;
+  margin-left: -450px;
+  left: 50%;
+  right: 50%;
+  top: 10%;
+  
+  font-size: x-large;
+  
+  pointer-events: none;
+  
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.outline-2 {
+  position: fixed;
+}
+
+.outline-3 {
+  position: absolute;
+}
+
+.outline-2.past,.outline-2.far-past{
+  opacity: 1;
+}
+
+.outline-2.past > :not(.outline-3) {
+  opacity: 0;
+}
+
+.outline-2.far-past > :not(.outline-3) {
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.past {
+  opacity: 0;
+}
+
+.next {
+  opacity: 0;
+}
+
+.current {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.far-past {
+  opacity: 0;
+}
+
+.far-next {
+  opacity: 0;
+	display: none;
+  transform: translate(2040);
+		-webkit-transform: translate(2040);
+		-moz-transform: translate(2040);
+		-ms-transform: translate(2040); 
+		-o-transform: translate(2040);
+  transform: translate3d(2040, 0, 0);
+		-webkit-transform: translate3d(2040, 0, 0);
+		-moz-transform: translate3d(2040, 0, 0);
+		-ms-transform: translate3d(2040, 0, 0);
+		-o-transform: translate3d(2040, 0, 0);
+}
+
+
+#text-table-of-contents > ul > li {
+  display: block;
+  float: left;
+  padding: 10px;
+  -webkit-transition: background 100ms ease;
+  -moz-transition: background 100ms ease;
+  -ms-transition: background 100ms ease;
+  -o-transition: background 100ms ease;
+  transition: background 100ms ease;
+}
+
+#text-table-of-contents > ul > li > ul {
+  padding-left: 0px;
+}
+
+#text-table-of-contents > ul > li > ul > li {
+  display: block;
+  float: left;
+}
+
+#table-of-contents > h2 {
+  display: none;
+}
+
+#table-of-contents {
+  color: white;
+  background: #3A3A3A;
+  width: 100%;
+  float: left;
+}
+
+#table-of-contents a {
+  text-decoration:none;
+  color: white;
+}
+
+.title {
+  display: none;
+}
+
+#text-table-of-contents > ul {
+  margin: 0;
+}
+
+#text-table-of-contents > ul > li > a {
+  font-weight: 700;
+}
+
+#text-table-of-contents > ul > li.toc-highlight {
+  background: #676767;
+}
+
+#text-table-of-contents > ul > li > ul > li.toc-highlight > a {
+  color: #8CC640;
+}
+
+#postamble {
+  display: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+body.alert {
+  background: #D8182B;
+  color: white;
+}
+
+body.soothe {
+  background: #5DB243;
+  color: white;
+}
+
+.section-active {
+  color: white;
+  background: #3A3A3A;
+}
+
+pre {
+  font-size: 50%;
+  text-align: left;
+  color: black;
+}
+
+body.section-title {
+  background: #FFF579;
+}
+
+.src, .example {
+    display: block;
+    padding: 8.5px;
+    margin: 0 0 9px;
+    font-size: 12.025px;
+    line-height: 18px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    white-space: pre;
+    background-repeat:no-repeat;
+    background-position:right top;
+    overflow: auto;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.src-R {
+    background-image: url('../img/src-r.png');
+}
+
+.src-ruby {
+    background-image: url('../img/src-ruby.png');
+}
+
+.src-awk {
+    background-image: url('../img/src-awk.png');
+}
+
+.src-sh {
+    background-image: url('../img/src-sh.png');
+}
+
+.src-makefile {
+    background-image: url('../img/src-makefile.png');
+}
+
+.linenr {
+    color: #ccc;
+}
+
+.code-highlighted, .code-highlighted span {
+    color: black;
+    background: #FFF579;
+    transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -o-transition: background 0.2s, color 0.2s;
+}
+
+#slide-counter {
+  float:right;
+  padding: 10px;
+  font-size: x-small;
+}
