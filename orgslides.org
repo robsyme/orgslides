@@ -1,0 +1,46 @@
+#+TITLE:     orgslides.org
+#+AUTHOR:    Robert Syme
+#+EMAIL:     rob@rob-desktop
+#+DATE:      2012-10-14 Sun
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:2 \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" type="text/css" href="css/slides.css" /><link rel="stylesheet" type="text/css" href="css/src-styles.css" /><script type="application/javascript" src="web/presorg.dart.js"></script><script type="application/dart" src="web/presorg.dart"></script><script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+
+* Introduction
+
+  Orgslides is a simple dart library.
+
+  Orgslides is also available compiled down to javascript.
+
+  Orgslides turns your orgmode html output into magical unicorn html
+  presentations.
+
+
+* Results
+
+** Embedding HTML
+
+   #+BEGIN_HTML
+     <iframe width="560" height="315" src="http://www.youtube.com/embed/dmJmRHDnhZo?list=UUVSMzwfN7kjQs_7_bMUuPmw&amp;hl=en_GB" frameborder="0" allowfullscreen></iframe>
+   #+END_HTML
+   
+* Usage
+
+** Installing Orgslides
+  Just add this file to your .org file:
+
+  #+BEGIN_EXAMPLE
+    Org example goes here
+  #+END_EXAMPLE
+
+** Extending Orgslides
+
+   There slides work for me, but you'll almost certainly want to
+   hack around a bit.
+
+   
+   
